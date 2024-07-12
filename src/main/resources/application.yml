@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: Spring Ecomm
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_ecom_multi
+    username: postgres
+    password: Jasir@1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: "smtp.gmail.com"
+    port: 587
+    username: "newofficial66@gmail.com"
+    password: "fddntpepqlcedhda"
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+        ssl:
+          trust: "*"
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+jwt:
+  secret: 1o4RbVqRTa+lEWCx9ZKPNProd7NINpEPB46grgr2mW8=
+  accessTokenLife: 500
+  refreshTokenLife: 30
+  issuer: www.xrontech.com
+springdoc:
+  paths-to-match: /**
